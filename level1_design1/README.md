@@ -4,8 +4,10 @@ The verification environment is setup using [Vyoma's UpTickPro](https://vyomasys
 ## Verification Environment
 The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drives inputs to the Design Under Test (multiplexer module here) which is 31:1 Multiplexer having a 5 bit select line. Here the input line is inp0, the select line is sel and out is the output line.
 The values are assigned to the input port using
-   <A=1
+    ``` python
+    A=1
     B=3
     dut.sel.value=A
-    dut.inp0.value=B>
-
+    dut.inp0.value=B
+    ```
+    
